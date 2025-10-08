@@ -9,9 +9,16 @@ interface Theme {
   order: number;
 }
 
-const DEFAULT_THEME = 'default';
+const DEFAULT_THEME = 'govtech-sapphire';
 
 const themes: Theme[] = [
+  {
+    id: 'govtech-sapphire',
+    name: 'GovTech Sapphire',
+    description: 'Professional and trustworthy',
+    preview: ['hsl(217, 84%, 42%)', 'hsl(39, 95%, 56%)', 'hsl(217, 30%, 98%)'],
+    order: 0
+  },
   {
     id: 'default',
     name: 'Warm Orange',

@@ -281,6 +281,61 @@
   --chart-4: 25 84% 41%;
   --chart-5: 65 84% 44%;
 }
+
+/* Theme: GovTech Sapphire - Custom */
+[data-theme="govtech-sapphire"] {
+  --background: 217 30% 98%;
+  --foreground: 217 25% 25%;
+  --card: 0 0% 100%;
+  --card-foreground: 217 25% 25%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 217 25% 25%;
+  --primary: 217 84% 42%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 39 95% 56%;
+  --secondary-foreground: 217 25% 25%;
+  --muted: 217 15% 65%;
+  --muted-foreground: 217 15% 40%;
+  --accent: 39 95% 56%;
+  --accent-foreground: 217 25% 25%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 217 30% 92%;
+  --input: 217 30% 92%;
+  --ring: 217 84% 42%;
+  --chart-1: 217 84% 42%;
+  --chart-2: 197 84% 45%;
+  --chart-3: 237 84% 39%;
+  --chart-4: 207 84% 41%;
+  --chart-5: 227 84% 44%;
+}
+
+[data-theme="govtech-sapphire"].dark {
+  --background: 217 30% 9%;
+  --foreground: 217 20% 94%;
+  --card: 217 30% 14%;
+  --card-foreground: 217 20% 94%;
+  --popover: 217 30% 14%;
+  --popover-foreground: 217 20% 94%;
+  --primary: 217 84% 55%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 39 95% 60%;
+  --secondary-foreground: 217 25% 25%;
+  --muted: 217 15% 35%;
+  --muted-foreground: 217 15% 65%;
+  --accent: 39 95% 60%;
+  --accent-foreground: 217 25% 25%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 217 30% 22%;
+  --input: 217 30% 22%;
+  --ring: 217 84% 55%;
+  --chart-1: 217 84% 55%;
+  --chart-2: 197 84% 58%;
+  --chart-3: 237 84% 52%;
+  --chart-4: 207 84% 54%;
+  --chart-5: 227 84% 57%;
+}
 }
 
 @layer base {
@@ -406,6 +461,10 @@ h1, h2, h3, h4, h5, h6 {
   background: hsl(45 84% 42% / 0.6);
 }
 
+[data-theme="govtech-sapphire"] ::-webkit-scrollbar-thumb:hover {
+  background: hsl(217 84% 42% / 0.6);
+}
+
 /* ===== Custom scrollbar for specific components ===== */
 .theme-dropdown::-webkit-scrollbar {
   width: 6px;
@@ -468,6 +527,11 @@ html {
   @apply bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent py-1;
 }
 
+/* GovTech Sapphire theme gradients */
+[data-theme="govtech-sapphire"] .text-gradient {
+  @apply bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent py-1;
+}
+
 /* Dark mode adjustments for better visibility */
 .dark .text-gradient {
   @apply bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent py-1;
@@ -489,6 +553,10 @@ html {
   @apply bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent py-1;
 }
 
+[data-theme="govtech-sapphire"].dark .text-gradient {
+  @apply bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent py-1;
+}
+
 /* Additional gradient utilities */
 .text-gradient-vibrant {
   @apply bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent py-1;
@@ -508,5 +576,86 @@ html {
 
 .pill-button {
   @apply rounded-full px-6 py-2 transition-all duration-300;
+}
+
+/* GovTech Sapphire specific utilities */
+[data-theme="govtech-sapphire"] .stat-card {
+  @apply bg-card border-l-4 border-l-primary shadow-md hover:shadow-lg transition-all duration-300;
+}
+
+[data-theme="govtech-sapphire"] .active-nav-item {
+  @apply relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:h-6 before:w-1 before:bg-secondary before:rounded-r-full;
+}
+
+.sidebar-nav-item {
+  @apply flex items-center gap-3 px-3 py-2 rounded-md transition-colors duration-200 hover:bg-primary/10;
+}
+
+.sidebar-nav-item.active {
+  @apply bg-primary/10 text-primary font-medium;
+}
+
+.dashboard-card {
+  @apply bg-card border border-border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300;
+}
+
+.dashboard-stat {
+  @apply bg-card border-l-4 border-primary p-4 rounded-lg shadow-sm;
+}
+
+.dashboard-table {
+  @apply w-full text-sm text-left;
+}
+
+.dashboard-table th {
+  @apply bg-muted/50 px-4 py-3 font-medium;
+}
+
+.dashboard-table td {
+  @apply px-4 py-3 border-b border-border;
+}
+
+.dashboard-table tr:hover {
+  @apply bg-muted/20;
+}
+
+.status-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-badge-verified {
+  @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+}
+
+.status-badge-pending {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+}
+
+.status-badge-rejected {
+  @apply bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+}
+
+.status-badge-draft {
+  @apply bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200;
+}
+
+.timeline-item {
+  @apply relative pl-8 pb-8 border-l border-primary/30 last:border-0;
+}
+
+.timeline-item::before {
+  @apply content-[''] absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary border-2 border-background;
+}
+
+.timeline-item.completed::before {
+  @apply bg-green-500;
+}
+
+.timeline-item.current::before {
+  @apply bg-primary ring-2 ring-primary/30 ring-offset-2 ring-offset-background;
+}
+
+.timeline-item.future::before {
+  @apply bg-muted;
 }
 }

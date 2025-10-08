@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "Aditi Sharma",
+    "college": "NIAMT Ranchi",
+    "aadharMasked": "XXXX-XXXX-1234",
+    "department": "Computer Science",
+    "year": 3,
+    "cgpa": 8.7,
+    "attendance": 92,
+    "activeInternships": 1,
+    "badgesEarned": [
+      { "id": 1, "name": "Top Performer", "description": "Achieved highest CGPA in the class" },
+      { "id": 2, "name": "Coding Ninja", "description": "Won the college hackathon" },
+      { "id": 3, "name": "Research Star", "description": "Published a research paper" }
+    ],
+    "skills": [
+      { "name": "Python", "level": 85 },
+      { "name": "Java", "level": 70 },
+      { "name": "Machine Learning", "level": 75 },
+      { "name": "Web Development", "level": 80 },
+      { "name": "Data Analysis", "level": 90 }
+    ],
+    "progress": [
+      { "semester": "Sem 1", "cgpa": 8.2 },
+      { "semester": "Sem 2", "cgpa": 8.4 },
+      { "semester": "Sem 3", "cgpa": 8.3 },
+      { "semester": "Sem 4", "cgpa": 8.6 },
+      { "semester": "Sem 5", "cgpa": 8.7 }
+    ],
+    "timeline": [
+      { "id": 1, "title": "Joined NIAMT Ranchi", "date": "2022-08-01", "status": "completed" },
+      { "id": 2, "title": "First Year Completed", "date": "2023-05-15", "status": "completed" },
+      { "id": 3, "title": "Internship at XYZ Corp", "date": "2023-06-10", "status": "completed" },
+      { "id": 4, "title": "Second Year Completed", "date": "2024-05-20", "status": "completed" },
+      { "id": 5, "title": "Research Paper Published", "date": "2024-07-15", "status": "completed" },
+      { "id": 6, "title": "Current Semester", "date": "2024-08-01", "status": "current" },
+      { "id": 7, "title": "Final Year Project", "date": "2025-01-10", "status": "future" },
+      { "id": 8, "title": "Graduation", "date": "2025-05-30", "status": "future" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Rahul Verma",
+    "college": "NIAMT Ranchi",
+    "aadharMasked": "XXXX-XXXX-5678",
+    "department": "Electronics and Communication",
+    "year": 3,
+    "cgpa": 9.1,
+    "attendance": 95,
+    "activeInternships": 0,
+    "badgesEarned": [
+      { "id": 1, "name": "Academic Excellence", "description": "Consistent CGPA above 9.0" },
+      { "id": 2, "name": "Innovation Award", "description": "Best innovative project in the department" }
+    ],
+    "skills": [
+      { "name": "Circuit Design", "level": 90 },
+      { "name": "VLSI", "level": 85 },
+      { "name": "Embedded Systems", "level": 80 },
+      { "name": "IoT", "level": 75 },
+      { "name": "Python", "level": 65 }
+    ],
+    "progress": [
+      { "semester": "Sem 1", "cgpa": 8.8 },
+      { "semester": "Sem 2", "cgpa": 9.0 },
+      { "semester": "Sem 3", "cgpa": 9.2 },
+      { "semester": "Sem 4", "cgpa": 9.0 },
+      { "semester": "Sem 5", "cgpa": 9.1 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Priya Patel",
+    "college": "NIAMT Ranchi",
+    "aadharMasked": "XXXX-XXXX-9012",
+    "department": "Computer Science",
+    "year": 4,
+    "cgpa": 8.9,
+    "attendance": 88,
+    "activeInternships": 1,
+    "badgesEarned": [
+      { "id": 1, "name": "Research Excellence", "description": "Outstanding research contribution" },
+      { "id": 2, "name": "Hackathon Winner", "description": "Won national level hackathon" },
+      { "id": 3, "name": "Community Leader", "description": "Leading student tech community" }
+    ],
+    "skills": [
+      { "name": "AI/ML", "level": 90 },
+      { "name": "Data Science", "level": 85 },
+      { "name": "Python", "level": 95 },
+      { "name": "Cloud Computing", "level": 80 },
+      { "name": "Research", "level": 85 }
+    ],
+    "progress": [
+      { "semester": "Sem 1", "cgpa": 8.5 },
+      { "semester": "Sem 2", "cgpa": 8.7 },
+      { "semester": "Sem 3", "cgpa": 8.8 },
+      { "semester": "Sem 4", "cgpa": 9.0 },
+      { "semester": "Sem 5", "cgpa": 8.9 },
+      { "semester": "Sem 6", "cgpa": 9.1 },
+      { "semester": "Sem 7", "cgpa": 8.9 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Arjun Singh",
+    "college": "NIAMT Ranchi",
+    "aadharMasked": "XXXX-XXXX-3456",
+    "department": "Mechanical Engineering",
+    "year": 2,
+    "cgpa": 7.8,
+    "attendance": 85,
+    "activeInternships": 0,
+    "badgesEarned": [
+      { "id": 1, "name": "Design Champion", "description": "Best CAD design in the department" }
+    ],
+    "skills": [
+      { "name": "AutoCAD", "level": 85 },
+      { "name": "SolidWorks", "level": 80 },
+      { "name": "Thermodynamics", "level": 75 },
+      { "name": "Manufacturing", "level": 70 },
+      { "name": "Project Management", "level": 65 }
+    ],
+    "progress": [
+      { "semester": "Sem 1", "cgpa": 7.5 },
+      { "semester": "Sem 2", "cgpa": 7.8 },
+      { "semester": "Sem 3", "cgpa": 7.8 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Neha Gupta",
+    "college": "NIAMT Ranchi",
+    "aadharMasked": "XXXX-XXXX-7890",
+    "department": "Civil Engineering",
+    "year": 3,
+    "cgpa": 8.3,
+    "attendance": 90,
+    "activeInternships": 1,
+    "badgesEarned": [
+      { "id": 1, "name": "Sustainable Design", "description": "Best eco-friendly project design" },
+      { "id": 2, "name": "Academic Merit", "description": "Consistent performance in academics" }
+    ],
+    "skills": [
+      { "name": "Structural Analysis", "level": 85 },
+      { "name": "AutoCAD", "level": 80 },
+      { "name": "Environmental Engineering", "level": 75 },
+      { "name": "Project Planning", "level": 85 },
+      { "name": "Surveying", "level": 90 }
+    ],
+    "progress": [
+      { "semester": "Sem 1", "cgpa": 8.0 },
+      { "semester": "Sem 2", "cgpa": 8.2 },
+      { "semester": "Sem 3", "cgpa": 8.4 },
+      { "semester": "Sem 4", "cgpa": 8.3 },
+      { "semester": "Sem 5", "cgpa": 8.3 }
+    ]
+  }
+]

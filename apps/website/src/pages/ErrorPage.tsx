@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Home, AlertCircle } from 'lucide-react';
 
+// Animation variants
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export default function ErrorPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary relative overflow-hidden flex items-center justify-center p-8">
+    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/5 relative overflow-hidden flex items-center justify-center p-8">
       {/* Themed background elements */}
       <div className="absolute w-96 h-96 bg-primary/5 rounded-full blur-3xl top-0 -right-48 animate-pulse"></div>
       <div className="absolute w-80 h-80 bg-primary/3 rounded-full blur-3xl -bottom-20 -left-20"></div>
@@ -17,7 +24,13 @@ export default function ErrorPage() {
       <div className="absolute bottom-20 right-24 w-10 h-10 border border-primary/30 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
 
       {/* Main error content */}
-      <div className="relative z-10 bg-card/80 backdrop-blur-sm border border-border shadow-2xl rounded-3xl p-10 max-w-md w-full text-center">
+      <motion.div 
+        className="relative z-10 bg-card/80 backdrop-blur-sm border border-border shadow-2xl rounded-3xl p-10 max-w-md w-full text-center"
+        initial="hidden"
+        animate="visible"
+        variants={fadeIn}
+        transition={{ duration: 0.5 }}
+      >
         
         {/* Error icon */}
         <div className="mb-6 relative inline-block">
@@ -44,26 +57,38 @@ export default function ErrorPage() {
           Let's get you back on track.
         </p>
         
-        {/* Action button */}
-        <Button 
-          asChild 
-          className="bg-primary hover:bg-primary/90 text-primary-foreground border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 gap-2"
-        >
-          <Link to="/">
-            <Home className="w-4 h-4" />
-            Return Home
-          </Link>
-        </Button>
+        {/* Action buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button 
+            asChild 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 gap-2"
+          >
+            <Link to="/">
+              <Home className="w-4 h-4" />
+              Return Home
+            </Link>
+          </Button>
+          
+          <Button 
+            variant="outline"
+            asChild
+            className="border-primary text-primary hover:bg-primary/10 hover:text-primary transition-all duration-300"
+          >
+            <Link to="/login">
+              Try the Demo
+            </Link>
+          </Button>
+        </div>
 
         {/* Additional help text */}
         <p className="text-xs text-muted-foreground/70 mt-6">
-          If you believe this is an error, please contact support.
+          Looking for something specific? Check out our <Link to="/about" className="text-primary hover:underline">about page</Link> or <Link to="/help" className="text-primary hover:underline">help center</Link>.
         </p>
-      </div>
+      </motion.div>
 
       {/* Additional decorative elements */}
       <div className="absolute top-10 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-30"></div>
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-30"></div>
     </div>
   );
-} 
+}
