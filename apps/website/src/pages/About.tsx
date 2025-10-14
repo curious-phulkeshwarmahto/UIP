@@ -34,40 +34,40 @@ const staggerContainer = {
 // Team members data
 const teamMembers = [
   {
-    name: 'Aryan Sharma',
+    name: 'Md Danish Ali ',
     role: 'Team Lead',
     avatar: 'AS',
-    bio: 'Computer Science graduate with expertise in system architecture and project management.'
+    bio: 'Computer Science undergraduate with expertise in Full stack web developement and project management.'
   },
   {
-    name: 'Priya Patel',
+    name: 'Phulkeshwar Mahto',
     role: 'Frontend Developer',
     avatar: 'PP',
-    bio: 'React specialist with 3 years of experience building responsive and accessible web applications.'
+    bio: 'Computer Science undergraduate with expertise in web design, App developement and project management.'
   },
   {
-    name: 'Vikram Singh',
+    name: 'Prince Kumar Singh',
     role: 'Backend Developer',
     avatar: 'VS',
-    bio: 'Full-stack developer with expertise in Node.js, Express, and database design.'
+    bio: 'Computer Science undergraduate, Full-stack developer with expertise in Node.js, Express, and database design.'
   },
   {
-    name: 'Neha Gupta',
+    name: 'Swati Kumari',
     role: 'UI/UX Designer',
     avatar: 'NG',
     bio: 'Designer with a passion for creating intuitive and engaging user experiences.'
   },
   {
-    name: 'Rahul Kumar',
-    role: 'Data Scientist',
+    name: 'Md Masoom Imtiyaz',
+    role: 'Data Collection & Analysis',
     avatar: 'RK',
-    bio: 'AI/ML specialist with experience in educational data analysis and visualization.'
+    bio: 'Computer Science undergraduate, AI/ML learner with experience in educational data analysis and visualization.'
   },
   {
-    name: 'Anjali Desai',
-    role: 'Quality Assurance',
+    name: 'Kavya Verma',
+    role: 'UI/UX Designer',
     avatar: 'AD',
-    bio: 'Testing expert ensuring high quality and reliability of all platform features.'
+    bio: 'Designer with a passion for creating intuitive and engaging user experiences.'
   }
 ];
 
