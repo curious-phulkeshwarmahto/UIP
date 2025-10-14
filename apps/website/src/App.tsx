@@ -21,6 +21,9 @@ import StudentInternships from "./pages/student/Internships";
 // Teacher Pages
 import TeacherDashboard from "./pages/teacher/Dashboard";
 import TeacherPublications from "./pages/teacher/Publications";
+import TeacherStudents from "./pages/teacher/Students";
+import TeacherStudentDetail from "./pages/teacher/StudentDetail";
+import TeacherStudentLogbook from "./pages/teacher/StudentLogbook";
 
 // Institution Pages
 import InstitutionDashboard from "./pages/institution/Dashboard";
@@ -53,6 +56,9 @@ const App = () => (
             {/* Teacher routes */}
             <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
             <Route path="/teacher/publications" element={<TeacherPublications />} />
+            <Route path="/teacher/students" element={<TeacherStudents />} />
+            <Route path="/teacher/students/:id" element={<TeacherStudentDetail />} />
+            <Route path="/teacher/students/:id/logbook" element={<TeacherStudentLogbook />} />
             <Route path="/teacher/profile" element={<Profile />} />
 
             {/* Institution routes */}
