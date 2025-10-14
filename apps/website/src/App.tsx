@@ -26,6 +26,7 @@ import TeacherPublications from "./pages/teacher/Publications";
 import InstitutionDashboard from "./pages/institution/Dashboard";
 import InstitutionAnalytics from "./pages/institution/Analytics";
 import InstitutionReports from "./pages/institution/Reports";
+import InstitutionStaff from "./pages/institution/Staff";
 
 const queryClient = new QueryClient();
 
@@ -58,6 +59,7 @@ const App = () => (
             <Route path="/institution/dashboard" element={<InstitutionDashboard />} />
             <Route path="/institution/analytics" element={<InstitutionAnalytics />} />
             <Route path="/institution/reports" element={<InstitutionReports />} />
+            <Route path="/institution/staff" element={<InstitutionStaff />} />
             <Route path="/institution/profile" element={<Profile />} />
 
             {/* Common routes */}

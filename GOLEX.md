@@ -9,6 +9,9 @@ The Unified Interface Platform (UIP) is a front-end prototype for the Smart Indi
 - 2025-10-08: Added teacher dashboard with student monitoring and logbook verification
 - 2025-10-08: Added institution dashboard and analytics with visualizations
 - 2025-10-08: Implemented custom GovTech Sapphire theme for government/educational aesthetic
+- 2025-10-14: Enhanced student and teacher data models with detailed fields for performance tracking
+- 2025-10-14: Added Staff & Students page to institution portal with comprehensive profiles
+- 2025-10-14: Implemented detailed student and teacher profiles with tabbed interfaces
 
 ## Clarifications Needed
 - Specific data structure requirements for NIRF/AISHE/APAR integration
@@ -29,6 +32,9 @@ The Unified Interface Platform (UIP) is a front-end prototype for the Smart Indi
 - `/app/repo/apps/website/src/pages/Help.tsx`: Help center with FAQs, documentation, and contact form
 - `/app/repo/apps/website/src/pages/ErrorPage.tsx`: Custom 404 error page
 - `/app/repo/apps/website/src/pages/student/`: Student-specific pages (Dashboard, Logbook, Internships)
-- `/app/repo/apps/website/src/pages/teacher/`: Teacher-specific pages (Dashboard)
-- `/app/repo/apps/website/src/pages/institution/`: Institution-specific pages (Dashboard, Analytics)
+- `/app/repo/apps/website/src/pages/teacher/`: Teacher-specific pages (Dashboard, Publications)
+- `/app/repo/apps/website/src/pages/institution/`: Institution-specific pages (Dashboard, Analytics, Reports, Staff)
 - `/app/repo/apps/website/src/data/`: Mock data files for students, teachers, institution, logbook, etc.
+- `/app/repo/apps/website/src/data/students.json`: Enhanced student data with academic performance, lifecycle tracking, etc.
+- `/app/repo/apps/website/src/data/teachers.json`: Enhanced teacher data with evaluations, publications, teaching history, etc.
+- `/app/repo/apps/website/src/pages/institution/Staff.tsx`: New page for managing students and staff data

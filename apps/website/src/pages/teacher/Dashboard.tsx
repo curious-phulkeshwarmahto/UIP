@@ -259,6 +259,20 @@ export default function TeacherDashboard() {
                     <p>{student.department}</p>
                     <p>CGPA: {student.cgpa}</p>
                   </div>
+                  
+                  {student.performance?.academic && (
+                    <div className="mt-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full">Rank: {student.performance.academic.classRank}</span>
+                        {student.mentorship && (
+                          <span className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full">
+                            Next Meeting: {new Date(student.mentorship.nextMeeting).toLocaleDateString()}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                  
                   <div className="mt-3 flex gap-2">
                     <Button variant="outline" size="sm" asChild>
                       <Link to={`/teacher/students/${student.id}`}>Profile</Link>
